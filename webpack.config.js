@@ -21,12 +21,12 @@ module.exports = { // Módulo que vamos a exportar dónd viene cada configuraci�
     }]
   },
   plugins: [// Plugins que vamos a utiliza con un arreglo.
-    new HtmlWebpackPlugin([
+    new HtmlWebpackPlugin(
       {
         inject: true,// como voy a inyectar un valor a un archivo HTML
         template: './public/index.html',// Donde se encuentra el template principal
         filename: './index.html' // hacia dónde lo mandamos.
       }
-    ])
+    )
   ]
 }
